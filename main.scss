@@ -1,0 +1,156 @@
+:root {
+    --card-bg: hsl(216, 50%, 16%);
+    --bg-color: hsl(217, 54%, 11%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    min-height: 100vh;
+    margin: 30px 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--card-bg);
+    box-shadow: -10px 10px 20px rgba(10, 10, 10, 0.529);
+    display: inline-block;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+
+    .img {
+        position: relative;
+        display: block;
+        padding: 10px;
+
+        img {
+            cursor: pointer;
+            position: relative;
+            right: auto;
+            border-radius: 10px;
+            width: 100%;
+        }
+
+        .ico {
+            cursor: pointer;
+            border-radius: 10px;
+            position: absolute;
+            top: 11px;
+            left: 11px;
+            width: 88%;
+            height: 87%;
+            padding: 10px;
+
+            .icon {
+                position: flex;
+                justify-content: center;
+                opacity: 0%;
+                align-items: center;
+                left: 40%;
+                top: 40%;
+                width: 20%;
+            }
+        }
+
+        .ico:hover {
+            background: hsla(178, 100%, 50%, 0.412);
+
+            .icon {
+                opacity: 100%;
+            }
+        }
+
+    }
+
+    h1 {
+        display: inline-block;
+        color: white;
+        cursor: pointer;
+        margin: 0 10px;
+        padding: 10px 0;
+    }
+
+    h1:hover {
+        color: var(--cyan);
+    }
+
+    p {
+        display: inline-block;
+        margin: 10px;
+        color: var(--soft-blue);
+        font-size: 18px;
+    }
+
+    .day-and-currency {
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+
+        .currency {
+            margin: 10px 10px;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            p{
+                color: var(--cyan);
+                margin: auto 0;
+                padding: 5px;
+            }
+        }
+
+        .day{
+            position: absolute;
+            right: 10px;
+            margin: 10px 10px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p{
+                color: var(--soft-blue);
+                margin: auto 0;
+                padding: 5px;
+            }
+        }
+    }
+
+    hr {
+        background-color: var(--soft-blue);
+        border: none;
+        height: 1px;
+        width: 100%;
+    }
+
+    .avatar {
+        display: flex;
+        margin-left: 10px;
+
+        img{
+            width: 10%;
+            border-style: solid;
+            border-color: white;
+            border-radius: 50%;
+        }
+
+        p{
+            span{
+                color: white;
+                cursor: pointer;
+            }
+
+            span:hover {
+                color: var(--cyan);
+            }
+        }
+    }
+}
