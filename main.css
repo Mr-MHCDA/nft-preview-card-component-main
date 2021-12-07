@@ -49,7 +49,7 @@ body {
   padding: 10px;
 }
 .card .img .ico .icon {
-  position: flex;
+  position: relative;
   justify-content: center;
   opacity: 0%;
   align-items: center;
